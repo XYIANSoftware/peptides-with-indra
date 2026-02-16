@@ -8,9 +8,9 @@ interface AppLayoutProps {
 
 export function AppLayout({ children }: AppLayoutProps) {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} data-app-layout>
       <AppHeader />
-      <main className={styles.main}>{children}</main>
+      <main className={styles.main} data-app-main>{children}</main>
       <AppFooter />
     </div>
   );
