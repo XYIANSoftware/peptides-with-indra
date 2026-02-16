@@ -13,8 +13,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - **`ProductTag` component**: Renders a tag by `label`; if dialog info exists (from constants), tag is a button that opens `TagInfoDialog`; otherwise renders a plain PrimeReact Tag. Used in ProductCard and product detail page.
 - **New constants file `productTagDialogs.ts`**: `TAG_DIALOG_LIST` (list of `TagDialogInfo`: id, label, dialogTitle, dialogDescription) and `getTagDialogInfo(label)`. Hard-coded for fast lookups and easy edits. (Requested name was PRODUCTS.ts; on case-insensitive systems that would overwrite products.ts, so the file is `productTagDialogs.ts`. Rename to PRODUCTS.ts on a case-sensitive FS if desired.)
 - **Type `TagDialogInfo`** in `product.types.ts` and re-exported from `@/types`.
-- **App icon**: Needle icon from `public/needle-icon.png` copied to `src/app/icon.png` so Next.js uses it as the app/favicon icon (App Router file convention).
-- **Light-mode background**: `public/background-tripical-heart.png` used as body background for SoCal Wellness Light theme only; soft overlay (rgba 0.88) keeps text readable. Dark Synth unchanged.
+- **App icon**: Needle icon from `public/needle-icon.png` copied to `src/app/icon.png`; old `src/app/favicon.ico` (Vercel default) removed so browsers use the needle icon.
+- **Light-mode background**: `public/background-tripical-heart.png` used as body background for SoCal Wellness Light theme only; overlay at 0.72 so image is visible while keeping text readable. Dark Synth unchanged.
 - **README**: Rewritten for Peptides With Indra—tech stack, getting started (Node 22, npm scripts), project structure, `@/` imports. Dev-facing and accurate.
 - **Types**: `Product` and `ProductCardItem` in `src/types` (`product.types.ts`). Constants import `Product` from `@/types`; types re-exported from `types/index.ts`.
 - **FAQ content**: Full FAQ list moved to constants as `FAQ_ITEMS` (preview items plus return policy and international shipping) with stable `id`s. FAQ page uses `FAQ_ITEMS` and `key={item.id}`; FAQ preview section uses `key={item.id}` for preview items.
