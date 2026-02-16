@@ -44,13 +44,20 @@ export const metadata: Metadata = {
     siteName: SITE_TITLE,
     title: fullTitle,
     description: SITE_DESCRIPTION,
-    // og:image added by app/opengraph-image.tsx
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1536,
+        height: 1024,
+        alt: `${SITE_TITLE} – Quality peptides, clear information`,
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: fullTitle,
     description: SITE_DESCRIPTION,
-    // twitter:image added by opengraph-image file convention
+    images: ['/og-image.png'],
   },
   robots: {
     index: true,
