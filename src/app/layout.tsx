@@ -4,16 +4,60 @@ import Script from 'next/script';
 import 'primereact/resources/themes/lara-dark-blue/theme.css';
 import 'primeicons/primeicons.css';
 import 'primeflex/primeflex.css';
-import { DEFAULT_THEME_ID, THEME_STORAGE_KEY } from '@/constants';
+import {
+  DEFAULT_THEME_ID,
+  SITE_DESCRIPTION,
+  SITE_TITLE,
+  SITE_URL,
+  THEME_STORAGE_KEY,
+} from '@/constants';
 import { Providers } from '@/providers';
 import { getThemeInitScript, THEME_SCRIPT_ID } from './theme-script';
 import './globals.css';
 import './main.scss';
 
+const fullTitle = `${SITE_TITLE} | Quality Peptides, Clear Information`;
+
 export const metadata: Metadata = {
-  title: 'Peptides With Indra | Quality Peptides, Clear Information',
-  description:
-    'Science-backed peptides, explained simply. Quality you can trust—from a brand that cares about what goes into your body.',
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: fullTitle,
+    template: `%s | ${SITE_TITLE}`,
+  },
+  description: SITE_DESCRIPTION,
+  keywords: [
+    'peptides',
+    'peptide supplements',
+    'quality peptides',
+    'science-backed',
+    'wellness',
+    'recovery',
+    'longevity',
+    'mobility',
+  ],
+  authors: [{ name: SITE_TITLE }],
+  creator: SITE_TITLE,
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: SITE_URL,
+    siteName: SITE_TITLE,
+    title: fullTitle,
+    description: SITE_DESCRIPTION,
+    // og:image added by app/opengraph-image.tsx
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: fullTitle,
+    description: SITE_DESCRIPTION,
+    // twitter:image added by opengraph-image file convention
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
+  },
+  alternates: { canonical: SITE_URL },
 };
 
 export default function RootLayout({

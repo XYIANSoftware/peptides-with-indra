@@ -1,5 +1,12 @@
 export { THEMES, DEFAULT_THEME_ID, THEME_STORAGE_KEY } from './themes';
-export { NAV_LINKS, CTA_LABEL, CTA_HREF, SITE_TITLE } from './navigation';
+export {
+  NAV_LINKS,
+  CTA_LABEL,
+  CTA_HREF,
+  SITE_TITLE,
+  SITE_URL,
+  SITE_DESCRIPTION,
+} from './navigation';
 export {
   HERO,
   TRUST_STRIP,
