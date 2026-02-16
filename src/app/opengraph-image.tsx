@@ -50,7 +50,7 @@ export default function Image() {
             fontWeight: 600,
           }}
         >
-          Quality Peptides · Clear Information
+          Professional peptides, your way
         </div>
       </div>
     ),

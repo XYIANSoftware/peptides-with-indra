@@ -18,4 +18,4 @@ export const SITE_URL =
     : 'https://peptideswithindra.com';
 
 export const SITE_DESCRIPTION =
-  'Science-backed peptides, explained simply. Quality you can trust—from a brand that cares about what goes into your body.';
+  'Professional peptides, your way. Clear information and easy access for everyday use, recovery, and injury-specific support.';

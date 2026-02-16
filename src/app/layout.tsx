@@ -16,7 +16,7 @@ import { getThemeInitScript, THEME_SCRIPT_ID } from './theme-script';
 import './globals.css';
 import './main.scss';
 
-const fullTitle = `${SITE_TITLE} | Quality Peptides, Clear Information`;
+const fullTitle = `${SITE_TITLE} | Professional peptides, your way`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -46,10 +46,10 @@ export const metadata: Metadata = {
     description: SITE_DESCRIPTION,
     images: [
       {
-        url: '/og-image.png',
+        url: '/main-app-twitter-og-meta-image-icon.png',
         width: 1536,
         height: 1024,
-        alt: `${SITE_TITLE} – Quality peptides, clear information`,
+        alt: `${SITE_TITLE} – Professional peptides, your way`,
       },
     ],
   },
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: fullTitle,
     description: SITE_DESCRIPTION,
-    images: ['/og-image.png'],
+    images: ['/main-app-twitter-og-meta-image-icon.png'],
   },
   robots: {
     index: true,

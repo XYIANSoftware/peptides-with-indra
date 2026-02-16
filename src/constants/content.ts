@@ -2,7 +2,8 @@
 
 export const HERO = {
   headline: 'Peptides With Indra',
-  valueStatement: 'Science-backed peptides, explained simply. Quality you can trust, from a brand that cares about what goes into your body.',
+  valueStatement:
+    'Clear information and easy access—for everyday use, recovery, and injury-specific support. Professional peptides, your way.',
   ctaPrimary: 'Shop Products',
   ctaSecondary: 'Learn More',
 };
@@ -132,11 +133,11 @@ export const CTA_BAND = {
 
 export const ABOUT_INTRO = {
   headline: 'About Peptides With Indra',
-  lead: 'We started Peptides With Indra because we were tired of the same old story: vague claims, confusing labels, and brands that didn’t seem to care about the person behind the order.',
+  lead: 'We started Peptides With Indra to make professional peptides easier to get and understand—for everyday use, recovery, and when you need injury-specific support.',
   paragraphs: [
-    'Our mission is simple: offer quality peptides with clear, honest information. We believe you deserve to know what you’re taking, why it might help, and what the research actually says—in language that makes sense.',
-    'We’re not here to sell you a miracle. We’re here to provide options that are well-researched, transparently made, and backed by a team that answers your questions.',
-    'Whether you’re new to peptides or you’ve been exploring for a while, we want to be a resource you can trust. Thank you for being here.',
+    'Our mission is simple: give you easy access to quality peptides and clear, honest information. You deserve to know what you’re taking, why it might help, and what the research says—in plain language.',
+    'We’re not here to sell you a miracle. We’re here to offer well-researched options, transparent information, and a team that answers your questions.',
+    'Whether you’re new to peptides or you’ve been using them for a while, we want to be a resource you can trust. Thank you for being here.',
   ],
 };
 
