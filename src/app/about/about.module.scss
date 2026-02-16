@@ -1,0 +1,32 @@
+.wrapper {
+  padding: 2rem 0 4rem;
+  max-width: 640px;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin: 0 0 1rem;
+  transition: color 0.2s ease;
+}
+
+.lead {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  margin: 0 0 1.5rem;
+  transition: color 0.2s ease;
+}
+
+.para {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--text-color-secondary);
+  margin: 0 0 1rem;
+  transition: color 0.2s ease;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

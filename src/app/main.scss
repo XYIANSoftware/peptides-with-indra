@@ -1,8 +1,9 @@
 // Single global SCSS entry. Load order:
-// variables → base → utilities → themes (dark-synth first) → primereact-overrides
+// variables → base → utilities → themes (wellness light first, then dark-synth) → primereact-overrides
 
 @use '../styles/variables';
 @use '../styles/base';
 @use '../styles/utilities';
+@use '../styles/themes/socal-wellness-light';
 @use '../styles/themes/dark-synth';
 @use '../styles/primereact-overrides';

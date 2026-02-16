@@ -14,6 +14,7 @@ html {
   font-family: var(--font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.25s ease, color 0.2s ease;
 }
 
 body {
@@ -23,6 +24,7 @@ body {
   color: var(--text-color);
   background: var(--page-background);
   font-family: var(--font-family);
+  transition: background-color 0.25s ease, color 0.2s ease;
 }
 
 a {
@@ -30,12 +32,12 @@ a {
   text-decoration: none;
 }
 
-// Layout / container helpers (vars only)
+// Layout / container helpers (vars only) – generous padding for professional, un-cramped feel
 .app-container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: var(--space-page-y) var(--space-page-x);
 }
 
 // Scrollbar tokens

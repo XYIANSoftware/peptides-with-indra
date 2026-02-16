@@ -1,0 +1,111 @@
+.wrapper {
+  padding: 2rem 0 4rem;
+}
+
+.twoCol {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2.5rem;
+  }
+}
+
+.imageCol {
+  flex-shrink: 0;
+
+  @media (min-width: 768px) {
+    width: 320px;
+  }
+}
+
+.imagePlaceholder {
+  aspect-ratio: 1;
+  background: var(--surface-200);
+  border: 1px solid var(--surface-border);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--text-color-secondary);
+  font-size: 0.875rem;
+  transition: background-color 0.25s ease, border-color 0.2s ease, color 0.2s ease;
+
+  .pi {
+    font-size: 2.5rem;
+    opacity: 0.6;
+  }
+}
+
+.infoCol {
+  flex: 1;
+  min-width: 0;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin: 0 0 0.75rem;
+  transition: color 0.2s ease;
+}
+
+.longDesc {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color-secondary);
+  margin: 0 0 1rem;
+  transition: color 0.2s ease;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 1.25rem;
+}
+
+.tabs {
+  margin-top: 1.5rem;
+
+  :global(.p-tabview-panels) {
+    background: var(--surface-card);
+    border: 1px solid var(--surface-border);
+    border-top: none;
+    padding: 1rem;
+    border-radius: 0 0 8px 8px;
+    transition: background-color 0.25s ease, border-color 0.2s ease;
+  }
+
+  :global(.p-tabview-nav) {
+    border-color: var(--surface-border);
+    background: var(--surface-ground);
+    transition: background-color 0.25s ease, border-color 0.2s ease;
+  }
+
+  :global(.p-tabview-header-link) {
+    color: var(--text-color);
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  :global(.p-tabview-header-link:hover) {
+    background: var(--surface-hover);
+  }
+
+  :global(.p-highlight .p-tabview-header-link) {
+    color: var(--primary-color);
+  }
+}
+
+.tabContent {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--text-color-secondary);
+  margin: 0;
+  transition: color 0.2s ease;
+}

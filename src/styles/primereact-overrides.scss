@@ -1,15 +1,24 @@
 // PrimeReact component overrides – use only CSS variables (no hex).
 // One Prime theme CSS + this file so all data-theme themes work.
+// Buttons and cards: generous padding, subtle elevation, hover/focus/ripple (ripple via PrimeReactProvider).
 
 .p-card {
   background: var(--surface-card);
   color: var(--text-color);
-  border-color: var(--surface-border);
+  border: var(--card-border);
+  border-radius: var(--card-radius, 12px);
+  box-shadow: var(--card-shadow);
+  transition: box-shadow 0.25s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+.p-card:hover {
+  box-shadow: var(--card-shadow-hover, var(--card-shadow));
 }
 
 .p-card .p-card-body {
   background: var(--surface-card);
   color: var(--text-color);
+  padding: var(--space-card, 1.5rem);
 }
 
 .p-card .p-card-title {
@@ -24,16 +33,38 @@
   background: var(--button-bg, var(--surface-card));
   color: var(--button-fg, var(--text-color));
   border-color: var(--surface-border);
+  min-height: 2.75rem;
+  padding: var(--button-padding-y, 0.625rem) var(--button-padding-x, 1.25rem);
+  border-radius: 8px;
+  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
 }
 
 .p-button:hover {
   background: var(--button-hover-bg, var(--surface-hover));
   color: var(--button-fg, var(--text-color));
   border-color: var(--surface-border);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
 }
 
-.p-button:focus {
+.p-button:focus,
+.p-button:focus-visible {
+  outline: none;
   box-shadow: var(--focus-ring);
+}
+
+.p-button:active {
+  transform: translateY(0);
+}
+
+.p-button.p-button-sm {
+  min-height: 2.25rem;
+  padding: 0.5rem 1rem;
+}
+
+.p-button.p-button-lg {
+  min-height: 3rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
 }
 
 .p-button.p-button-primary {
@@ -46,6 +77,12 @@
   background: var(--button-primary-background-hover, var(--primary-color));
   color: var(--primary-color-text);
   border-color: var(--button-primary-background-hover, var(--primary-color));
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.p-button.p-button-primary:focus,
+.p-button.p-button-primary:focus-visible {
+  box-shadow: var(--focus-ring);
 }
 
 .p-datatable {
@@ -78,7 +115,16 @@
 .p-tag {
   background: var(--surface-200);
   color: var(--text-color);
-  border-color: var(--surface-border);
+  border: 1px solid var(--surface-border);
+  padding: var(--tag-padding-y, 0.4rem) var(--tag-padding-x, 0.75rem);
+  border-radius: 6px;
+  font-size: 0.875rem;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.p-tag.p-tag-sm {
+  padding: 0.35rem 0.6rem;
+  font-size: 0.8125rem;
 }
 
 .p-panel {
@@ -161,4 +207,48 @@
 .p-dropdown-panel .p-dropdown-items .p-dropdown-item.p-highlight {
   background: var(--highlight-bg);
   color: var(--highlight-text-color);
+}
+
+.p-sidebar {
+  background: var(--surface-overlay);
+  border-color: var(--surface-border);
+  color: var(--text-color);
+}
+
+.p-sidebar .p-sidebar-header {
+  background: var(--surface-overlay);
+  color: var(--text-color);
+  border-color: var(--surface-border);
+}
+
+.p-sidebar .p-sidebar-content {
+  background: var(--surface-overlay);
+  color: var(--text-color);
+}
+
+.p-tabview .p-tabview-nav {
+  background: var(--surface-ground);
+  border-color: var(--surface-border);
+}
+
+.p-tabview .p-tabview-nav .p-tabview-header-link {
+  color: var(--text-color);
+  border-color: var(--surface-border);
+}
+
+.p-tabview .p-tabview-nav .p-tabview-header-link:hover {
+  background: var(--surface-hover);
+  color: var(--text-color);
+}
+
+.p-tabview .p-tabview-nav .p-tabview-header.p-highlight .p-tabview-header-link {
+  background: var(--surface-card);
+  color: var(--primary-color);
+  border-color: var(--surface-border);
+}
+
+.p-tabview .p-tabview-panels {
+  background: var(--surface-card);
+  border-color: var(--surface-border);
+  color: var(--text-color);
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
+// PrimeReact: theme (required for styled mode), then icons and flex utilities
 import 'primereact/resources/themes/lara-dark-blue/theme.css';
 import 'primeicons/primeicons.css';
 import 'primeflex/primeflex.css';
@@ -10,8 +11,9 @@ import './globals.css';
 import './main.scss';
 
 export const metadata: Metadata = {
-  title: 'Peptides with Indra',
-  description: 'Next.js + PrimeReact app with theme system',
+  title: 'Peptides With Indra | Quality Peptides, Clear Information',
+  description:
+    'Science-backed peptides, explained simply. Quality you can trust—from a brand that cares about what goes into your body.',
 };
 
 export default function RootLayout({

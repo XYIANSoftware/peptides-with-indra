@@ -8,6 +8,8 @@
   --text-primary: #dbd4fa;
   --card-border: rgba(184, 114, 249, 0.2);
   --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), 0 0 12px rgba(184, 114, 249, 0.08);
+  --card-shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.35), 0 0 16px rgba(184, 114, 249, 0.12);
+  --card-radius: 12px;
   --font-family: system-ui, -apple-system, sans-serif;
 
   // PrimeReact semantic tokens (aliases)
@@ -65,4 +67,14 @@
 
   --progress-spinner-size-sm: 14px;
   --progress-spinner-size-md: 18px;
+
+  // Spacing (used by base + components for consistent breathing room)
+  --space-page-x: 1.25rem;
+  --space-page-y: 1.5rem;
+  --space-section: 3rem;
+  --space-card: 1.5rem;
+  --button-padding-x: 1.25rem;
+  --button-padding-y: 0.625rem;
+  --tag-padding-x: 0.75rem;
+  --tag-padding-y: 0.4rem;
 }

@@ -1,0 +1,148 @@
+// Primary theme: SoCal Wellness Light — soft off-white, warm neutrals, muted seafoam/sage.
+// High-trust wellness, coastal calm. Scoped so switching data-theme changes the whole UI.
+
+html[data-theme='socal-wellness-light'],
+[data-theme='socal-wellness-light'] {
+  --header-bg: #ffffff !important;
+  --header-fg: #2d2d2d !important;
+  --header-border: 1px solid #e8e6e0 !important;
+  --header-shadow: 0 1px 3px rgba(45, 45, 45, 0.06) !important;
+  --window-bg: #f8f7f4 !important;
+  --window-fg: #2d2d2d !important;
+  --window-border: 1px solid #e8e6e0 !important;
+  --window-surface-bg: #ffffff !important;
+  --window-surface-fg: #2d2d2d !important;
+  --window-surface-border: 1px solid #e0ddd5 !important;
+  --input-bg: #ffffff !important;
+  --input-fg: #2d2d2d !important;
+  --input-border: 1px solid #e0ddd5 !important;
+  --button-bg: var(--window-surface-bg) !important;
+  --button-fg: #2d2d2d !important;
+  --button-hover-bg: var(--surface-hover) !important;
+  --menu-item-hover-bg: #f0efe9 !important;
+  --status-icon-fill: #6ba392 !important;
+  --status-icon-stroke: #6ba392 !important;
+  --status-icon-stroke-offline: #b0b0a8 !important;
+  --page-background: #f8f7f4 !important;
+  --text-primary: #2d2d2d !important;
+  --button-primary-background: #6ba392 !important;
+  --button-primary-background-hover: #5d9485 !important;
+  --button-primary-text: #ffffff !important;
+  --maskbg: rgba(248, 247, 244, 0.85) !important;
+  --focus-ring: 0 0 0 0.2rem rgba(107, 163, 146, 0.35) !important;
+  --highlight-bg: rgba(126, 184, 168, 0.12) !important;
+  --highlight-text-color: #2d2d2d !important;
+  --color-danger: #c45c6a !important;
+  --surface-ground: #f8f7f4 !important;
+  --surface-section: #f5f4f0 !important;
+  --surface-card: #ffffff !important;
+  --surface-overlay: #ffffff !important;
+  --surface-border: #e8e6e0 !important;
+  --surface-hover: rgba(107, 163, 146, 0.08) !important;
+  --surface-0: #ffffff !important;
+  --surface-50: #faf9f6 !important;
+  --surface-100: #f5f4f0 !important;
+  --surface-200: #e8e6e0 !important;
+  --surface-300: #e0ddd5 !important;
+  --surface-400: #c9c6bc !important;
+  --surface-500: #9a968c !important;
+  --surface-600: #6b6860 !important;
+  --surface-700: #5c5c5c !important;
+  --surface-800: #3d3d3d !important;
+  --surface-900: #2d2d2d !important;
+  --surface-a: #ffffff !important;
+  --surface-b: #f8f7f4 !important;
+  --surface-c: rgba(107, 163, 146, 0.06) !important;
+  --surface-d: #e8e6e0 !important;
+  --surface-e: #ffffff !important;
+  --surface-f: #faf9f6 !important;
+  --gray-50: #faf9f6 !important;
+  --gray-100: #f5f4f0 !important;
+  --gray-200: #e8e6e0 !important;
+  --gray-300: #d8d6ce !important;
+  --gray-400: #b0b0a8 !important;
+  --gray-500: #8a8a82 !important;
+  --gray-600: #6b6b6b !important;
+  --gray-700: #5c5c5c !important;
+  --gray-800: #3d3d3d !important;
+  --gray-900: #2d2d2d !important;
+  --text-color: #2d2d2d !important;
+  --text-color-secondary: #5c5c5c !important;
+  --primary-color: #6ba392 !important;
+  --primary-color-text: #ffffff !important;
+  --scrollbar-track-bg: #f0efe9 !important;
+  --scrollbar-thumb-bg: #d8d6ce !important;
+  --scrollbar-thumb-hover-bg: #c9c6bc !important;
+  --card-border: 1px solid rgba(107, 163, 146, 0.15) !important;
+  --card-shadow: 0 2px 8px rgba(45, 45, 45, 0.06), 0 1px 2px rgba(45, 45, 45, 0.04) !important;
+  --card-shadow-hover: 0 8px 24px rgba(45, 45, 45, 0.08), 0 2px 6px rgba(45, 45, 45, 0.04) !important;
+  --card-radius: 12px !important;
+  --tag-today-bg: rgba(107, 163, 146, 0.15) !important;
+  --tag-today-text: #5d9485 !important;
+  --tag-today-border: rgba(107, 163, 146, 0.4) !important;
+  --p-primary-color: var(--primary-color) !important;
+  --data-quality-valid: rgba(107, 163, 146, 0.4) !important;
+  --data-quality-warning: rgba(180, 140, 60, 0.4) !important;
+  --data-quality-error: rgba(196, 92, 106, 0.4) !important;
+  --data-quality-empty: rgba(154, 150, 140, 0.25) !important;
+  --progress-spinner-size-sm: 14px !important;
+  --progress-spinner-size-md: 18px !important;
+  // Micro-accent: warm sand/beige for highlights
+  --accent-sand: #e8dfd0 !important;
+  --accent-sand-strong: #d4c4a8 !important;
+}
+
+// First paint: set html/body for default theme so no flash
+html[data-theme='socal-wellness-light'] {
+  background: #f8f7f4;
+  color: #2d2d2d;
+}
+
+html[data-theme='socal-wellness-light'] body {
+  background: #f8f7f4;
+  color: #2d2d2d;
+}
+
+// Dialog overrides for SoCal Wellness Light
+html[data-theme='socal-wellness-light'] .p-dialog,
+[data-theme='socal-wellness-light'] .p-dialog {
+  background: var(--window-surface-bg);
+  border: var(--window-surface-border);
+  color: var(--window-surface-fg);
+}
+
+html[data-theme='socal-wellness-light'] .p-dialog .p-dialog-header,
+[data-theme='socal-wellness-light'] .p-dialog .p-dialog-header {
+  background: var(--header-bg);
+  color: var(--header-fg);
+  border: var(--header-border);
+}
+
+html[data-theme='socal-wellness-light'] .p-dialog .p-dialog-title,
+[data-theme='socal-wellness-light'] .p-dialog .p-dialog-title {
+  color: var(--header-fg);
+}
+
+html[data-theme='socal-wellness-light'] .p-dialog .p-dialog-content,
+[data-theme='socal-wellness-light'] .p-dialog .p-dialog-content {
+  background: var(--window-surface-bg);
+  color: var(--window-surface-fg);
+  border: var(--window-surface-border);
+}
+
+html[data-theme='socal-wellness-light'] .p-dialog .p-dialog-footer,
+[data-theme='socal-wellness-light'] .p-dialog .p-dialog-footer {
+  background: var(--window-surface-bg);
+  border: var(--window-surface-border);
+}
+
+html[data-theme='socal-wellness-light'] .p-dialog .p-dialog-header-icon,
+[data-theme='socal-wellness-light'] .p-dialog .p-dialog-header-icon {
+  color: var(--header-fg);
+}
+
+html[data-theme='socal-wellness-light'] .p-dialog .p-dialog-header-icon:hover,
+[data-theme='socal-wellness-light'] .p-dialog .p-dialog-header-icon:hover {
+  background: var(--surface-hover);
+  color: var(--header-fg);
+}

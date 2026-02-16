@@ -6,7 +6,7 @@ export function getThemeInitScript(storageKey: string, defaultTheme: string): st
 (function() {
   try {
     var stored = localStorage.getItem('${storageKey.replace(/'/g, "\\'")}');
-    var theme = stored && ['dark-synth'].indexOf(stored) >= 0 ? stored : '${defaultTheme.replace(/'/g, "\\'")}';
+    var theme = stored && ['socal-wellness-light','dark-synth'].indexOf(stored) >= 0 ? stored : '${defaultTheme.replace(/'/g, "\\'")}';
     document.documentElement.setAttribute('data-theme', theme);
   } catch (e) {}
 })();

@@ -1,1 +1,2 @@
-// Common reusable components
+export { ProductCard } from './ProductCard';
+export type { ProductCardProps } from './ProductCard';

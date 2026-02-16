@@ -1,1 +1,1 @@
-// Page-specific components
+export * from './home';

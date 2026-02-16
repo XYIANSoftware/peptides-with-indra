@@ -1,2 +1,4 @@
-// Common, layout, pages: add exports when components exist
+export * from './common';
+export * from './layout';
 export * from './ui';
+export * from './pages';
