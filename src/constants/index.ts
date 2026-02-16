@@ -13,3 +13,4 @@ export {
   CONTACT_COPY,
 } from './content';
 export { PRODUCTS, getProductBySlug } from './products';
+export { TAG_DIALOG_LIST, getTagDialogInfo } from './productTagDialogs';

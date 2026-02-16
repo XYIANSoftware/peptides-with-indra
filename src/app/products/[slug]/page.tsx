@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Button } from 'primereact/button';
-import { Tag } from 'primereact/tag';
+import { ProductTag } from '@/components/ui';
 import { TabView, TabPanel } from 'primereact/tabview';
 import { AppLayout } from '@/components';
 import { getProductBySlug } from '@/constants';
@@ -31,7 +31,7 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
             <p className={styles.longDesc}>{product.longDescription}</p>
             <div className={styles.chips}>
               {product.specChips.map((chip) => (
-                <Tag key={chip} value={chip} className="p-tag-sm" />
+                <ProductTag key={chip} label={chip} />
               ))}
             </div>
             <Link href="/contact">

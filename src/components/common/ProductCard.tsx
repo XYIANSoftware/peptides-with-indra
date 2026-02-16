@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Card } from 'primereact/card';
 import { Button } from 'primereact/button';
-import { Tag } from 'primereact/tag';
+import { ProductTag } from '@/components/ui';
 import type { ProductCardItem } from '@/types';
 
 export interface ProductCardProps {
@@ -27,7 +27,7 @@ export function ProductCard({ item, classNames = {}, titleTag: TitleTag = 'h2' }
         <p className={classNames.desc}>{shortDescription}</p>
         <div className={classNames.chips}>
           {specChips.map((chip) => (
-            <Tag key={chip} value={chip} className="p-tag-sm" />
+            <ProductTag key={chip} label={chip} />
           ))}
         </div>
         <Link href={linkHref}>

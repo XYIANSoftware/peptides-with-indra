@@ -8,6 +8,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **Product spec tag dialogs**: Tags (Recovery, Research-backed, 5 mg, Mobility, Longevity, Cellular, 10 mg) are clickable with subtle hover and active styles; click/tap opens a dialog with short, factual copy. Same look as before so they don’t scream “clickable.”
+- **Reusable `TagInfoDialog`**: Props `visible`, `onHide`, `title`, `description`; used for tag info. Exported from `@/components/ui`.
+- **`ProductTag` component**: Renders a tag by `label`; if dialog info exists (from constants), tag is a button that opens `TagInfoDialog`; otherwise renders a plain PrimeReact Tag. Used in ProductCard and product detail page.
+- **New constants file `productTagDialogs.ts`**: `TAG_DIALOG_LIST` (list of `TagDialogInfo`: id, label, dialogTitle, dialogDescription) and `getTagDialogInfo(label)`. Hard-coded for fast lookups and easy edits. (Requested name was PRODUCTS.ts; on case-insensitive systems that would overwrite products.ts, so the file is `productTagDialogs.ts`. Rename to PRODUCTS.ts on a case-sensitive FS if desired.)
+- **Type `TagDialogInfo`** in `product.types.ts` and re-exported from `@/types`.
 - **README**: Rewritten for Peptides With Indra—tech stack, getting started (Node 22, npm scripts), project structure, `@/` imports. Dev-facing and accurate.
 - **Types**: `Product` and `ProductCardItem` in `src/types` (`product.types.ts`). Constants import `Product` from `@/types`; types re-exported from `types/index.ts`.
 - **FAQ content**: Full FAQ list moved to constants as `FAQ_ITEMS` (preview items plus return policy and international shipping) with stable `id`s. FAQ page uses `FAQ_ITEMS` and `key={item.id}`; FAQ preview section uses `key={item.id}` for preview items.

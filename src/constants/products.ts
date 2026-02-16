@@ -7,7 +7,7 @@ export const PRODUCTS: Product[] = [
     name: 'BPC-157',
     shortDescription: 'Support for recovery and tissue repair.',
     longDescription:
-      'BPC-157 is a peptide fragment that has been studied for its potential to support recovery and tissue repair. We offer it in a form that’s easy to use and clearly labeled.',
+      'BPC-157 is a peptide fragment that has been studied for its potential to support recovery and tissue repair. We offer it in a form that\'s easy to use and clearly labeled.',
     specChips: ['Recovery', 'Research-backed', '5 mg'],
     details:
       'BPC-157 is a body protection compound that has been researched for its role in supporting gut health, tissue repair, and recovery. Our product is produced under strict quality controls and labeled with clear dosing guidance. Always consult your healthcare provider before use.',
