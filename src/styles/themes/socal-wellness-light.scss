@@ -93,13 +93,24 @@ html[data-theme='socal-wellness-light'],
 }
 
 // First paint: set html/body for default theme so no flash
+// Light mode only: background image from public with soft overlay for readability
 html[data-theme='socal-wellness-light'] {
   background: #f8f7f4;
   color: #2d2d2d;
 }
 
 html[data-theme='socal-wellness-light'] body {
-  background: #f8f7f4;
+  background-color: #f8f7f4;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(248, 247, 244, 0.88),
+      rgba(248, 247, 244, 0.88)
+    ),
+    url(/background-tripical-heart.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
   color: #2d2d2d;
 }
 
