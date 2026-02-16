@@ -110,6 +110,9 @@
   background: var(--surface-overlay);
   border-color: var(--surface-border);
   color: var(--text-color);
+  padding: 1rem var(--space-component, 1.25rem);
+  border-radius: 8px;
+  line-height: 1.5;
 }
 
 .p-tag {
@@ -136,18 +139,23 @@
   background: var(--surface-ground);
   color: var(--text-color);
   border-color: var(--surface-border);
+  padding: 1rem var(--space-component, 1.25rem);
 }
 
 .p-panel .p-panel-content {
   background: var(--surface-card);
   color: var(--text-color);
   border-color: var(--surface-border);
+  padding: var(--space-component, 1.25rem);
 }
 
 .p-accordion .p-accordion-header .p-accordion-header-link {
   background: var(--surface-ground);
   color: var(--text-color);
   border-color: var(--surface-border);
+  padding: 1rem var(--space-component, 1.25rem);
+  min-height: 3rem;
+  transition: background-color 0.2s ease;
 }
 
 .p-accordion .p-accordion-header .p-accordion-header-link:hover {
@@ -158,12 +166,22 @@
   background: var(--surface-card);
   color: var(--text-color);
   border-color: var(--surface-border);
+  padding: var(--space-component, 1.25rem);
+  line-height: 1.6;
+}
+
+.p-accordion .p-accordion-content > .p-toggleable-content {
+  padding: 0;
 }
 
 .p-inputtext {
   background: var(--input-bg, var(--surface-0));
   color: var(--input-fg, var(--text-color));
   border: var(--input-border, 1px solid var(--surface-border));
+  padding: var(--input-padding-y, 0.625rem) var(--input-padding-x, 0.75rem);
+  min-height: 2.75rem;
+  border-radius: 8px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .p-inputtext:enabled:hover {
@@ -173,6 +191,13 @@
 .p-inputtext:enabled:focus {
   box-shadow: var(--focus-ring);
   border-color: var(--primary-color);
+}
+
+.p-inputtextarea {
+  padding: var(--input-padding-y, 0.625rem) var(--input-padding-x, 0.75rem);
+  border-radius: 8px;
+  line-height: 1.5;
+  min-height: 6rem;
 }
 
 .p-dropdown {
@@ -198,6 +223,7 @@
 
 .p-dropdown-panel .p-dropdown-items .p-dropdown-item {
   color: var(--text-color);
+  padding: 0.625rem var(--space-component, 1.25rem);
 }
 
 .p-dropdown-panel .p-dropdown-items .p-dropdown-item:hover {
@@ -219,11 +245,13 @@
   background: var(--surface-overlay);
   color: var(--text-color);
   border-color: var(--surface-border);
+  padding: 1rem var(--space-component, 1.25rem);
 }
 
 .p-sidebar .p-sidebar-content {
   background: var(--surface-overlay);
   color: var(--text-color);
+  padding: var(--space-component, 1.25rem);
 }
 
 .p-tabview .p-tabview-nav {
@@ -234,6 +262,8 @@
 .p-tabview .p-tabview-nav .p-tabview-header-link {
   color: var(--text-color);
   border-color: var(--surface-border);
+  padding: 0.875rem 1.25rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .p-tabview .p-tabview-nav .p-tabview-header-link:hover {
@@ -251,4 +281,9 @@
   background: var(--surface-card);
   border-color: var(--surface-border);
   color: var(--text-color);
+  padding: var(--space-component, 1.25rem);
+}
+
+.p-tabview .p-tabview-panel {
+  padding: 0;
 }

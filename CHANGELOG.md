@@ -13,7 +13,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - **FAQ content**: Full FAQ list moved to constants as `FAQ_ITEMS` (preview items plus return policy and international shipping) with stable `id`s. FAQ page uses `FAQ_ITEMS` and `key={item.id}`; FAQ preview section uses `key={item.id}` for preview items.
 - **ProductCard**: Shared `ProductCard` in `components/common` (props: `item: ProductCardItem`, optional `classNames`, optional `titleTag`). Products page and Featured products section use it; no duplicated card markup.
 - **ESLint**: `@typescript-eslint/no-explicit-any`: `"error"` for `**/*.ts` and `**/*.tsx` to enforce no `any`/unsafe typings.
-- Spacing tokens in variables: `--space-page-x`, `--space-page-y`, `--space-section`, `--space-card`, `--button-padding-x`, `--button-padding-y`, `--tag-padding-x`, `--tag-padding-y` for consistent breathing room.
+- Spacing tokens in variables: `--space-page-x`, `--space-page-y`, `--space-section`, `--space-card`, `--space-component`, `--button-padding-x`, `--button-padding-y`, `--tag-padding-x`, `--tag-padding-y`, `--input-padding-x`, `--input-padding-y` for consistent breathing room.
 - Card elevation: `--card-shadow`, `--card-shadow-hover`, `--card-radius` in both themes; cards get default shadow and stronger shadow on hover.
 - SoCal Wellness Light: subtle earthy card border and refined shadows for a smoother, more professional look.
 
@@ -25,6 +25,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Tags/chips: more padding and border-radius for readable, un-cramped labels.
 - Cards: body padding from `--space-card`, border-radius, border; hover elevation via `--card-shadow-hover`.
 - Header: increased inner padding and CTA uses default button size (no longer sm). Products page: more wrapper and grid gap, card body gap.
+- Accordion: header link padding `1rem 1.25rem`, min-height 3rem; content padding `--space-component`, line-height 1.6. Panel, Message, Sidebar, TabView: header/content padding via `--space-component`. InputText/InputTextarea: padding and min-height; InputTextarea line-height and min-height. Dropdown panel items: padding.
 
 ### Fixed
 
