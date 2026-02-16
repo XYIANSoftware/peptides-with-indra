@@ -27,6 +27,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- **Netlify**: Added `netlify.toml` with build command `npm run build` and `NODE_VERSION = "22"` to match `.nvmrc`; Next.js is auto-detected by Netlify (OpenNext).
+- **Cards and sections (base)**: Slight rounding and small elevation applied globally. `variables.scss`: added `--surface-radius` and `--surface-shadow`; cards use `--card-radius: 14px` and slightly stronger `--card-shadow` / `--card-shadow-hover`. `base.scss`: all `section` elements get `border-radius: var(--surface-radius)` and `box-shadow: var(--surface-shadow)`. Both themes set these tokens so cards and sections look less flat everywhere.
 - **Constants**: `FAQ_PREVIEW_ITEMS` now include `id`. `constants/index.ts` no longer re-exports `Product` (use `@/types`). `constants/products.ts` imports `Product` from `@/types`.
 - Base: `.app-container` uses spacing tokens; main content area uses `--space-page-x`.
 - Buttons: larger min-height and padding (default, sm, lg); clear hover (subtle shadow) and focus-visible (focus ring); ripple already enabled via PrimeReactProvider ([PrimeReact Ripple](https://primereact.org/ripple/)).

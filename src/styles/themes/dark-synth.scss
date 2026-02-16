@@ -73,9 +73,11 @@ html[data-theme='dark-synth'],
   --scrollbar-thumb-bg: #2a1f4e !important;
   --scrollbar-thumb-hover-bg: #3d2a5c !important;
   --card-border: rgba(184, 114, 249, 0.2) !important;
-  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), 0 0 12px rgba(184, 114, 249, 0.08) !important;
-  --card-shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.4), 0 0 16px rgba(184, 114, 249, 0.12) !important;
-  --card-radius: 12px !important;
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.35), 0 0 16px rgba(184, 114, 249, 0.08) !important;
+  --card-shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.4), 0 0 20px rgba(184, 114, 249, 0.12) !important;
+  --card-radius: 14px !important;
+  --surface-radius: 12px !important;
+  --surface-shadow: 0 2px 10px rgba(0, 0, 0, 0.25), 0 0 8px rgba(184, 114, 249, 0.06) !important;
   --tag-today-bg: rgba(184, 114, 249, 0.25) !important;
   --tag-today-text: #c89cff !important;
   --tag-today-border: rgba(184, 114, 249, 0.5) !important;

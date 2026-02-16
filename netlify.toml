@@ -1,0 +1,8 @@
+# Next.js on Netlify: auto-detected via OpenNext; no plugin required.
+# https://docs.netlify.com/build/frameworks/framework-setup-guides/nextjs/overview/
+
+[build]
+  command = "npm run build"
+
+[build.environment]
+  NODE_VERSION = "22"
