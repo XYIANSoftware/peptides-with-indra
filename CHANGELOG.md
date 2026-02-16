@@ -15,6 +15,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - **Type `TagDialogInfo`** in `product.types.ts` and re-exported from `@/types`.
 - **App icon**: Needle icon from `public/needle-icon.png` copied to `src/app/icon.png`; old `src/app/favicon.ico` (Vercel default) removed so browsers use the needle icon.
 - **Light-mode background**: `public/background-tripical-heart.png` as body background (SoCal Wellness Light only). Parallax style (`background-attachment: fixed`). Theme body rules use `!important` so they override base; layout wrapper and main use `data-app-layout` / `data-app-main` and are set to `background: transparent` in light mode so the body background shows through.
+- **Dark-mode background**: `public/background-dark-synth-tropical-heart.png` as body background for Dark Synth theme; same parallax and transparent wrappers so both themes show the same image style with different colors.
 - **README**: Rewritten for Peptides With Indra—tech stack, getting started (Node 22, npm scripts), project structure, `@/` imports. Dev-facing and accurate.
 - **Types**: `Product` and `ProductCardItem` in `src/types` (`product.types.ts`). Constants import `Product` from `@/types`; types re-exported from `types/index.ts`.
 - **FAQ content**: Full FAQ list moved to constants as `FAQ_ITEMS` (preview items plus return policy and international shipping) with stable `id`s. FAQ page uses `FAQ_ITEMS` and `key={item.id}`; FAQ preview section uses `key={item.id}` for preview items.

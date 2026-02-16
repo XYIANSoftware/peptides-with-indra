@@ -88,15 +88,31 @@ html[data-theme='dark-synth'],
   --progress-spinner-size-md: 18px !important;
 }
 
-// First paint: set html/body for default theme so no flash
+// First paint + background image (parallax), same treatment as light theme
 html[data-theme='dark-synth'] {
-  background: #0c0020;
+  background: transparent;
   color: #dbd4fa;
 }
 
 html[data-theme='dark-synth'] body {
-  background: #0c0020;
+  background-color: #0c0020 !important;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(12, 0, 32, 0.72),
+      rgba(12, 0, 32, 0.72)
+    ),
+    url(/background-dark-synth-tropical-heart.png) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-attachment: fixed !important;
+  background-repeat: no-repeat !important;
   color: #dbd4fa;
+}
+
+// Ensure layout wrappers don't cover the body background (dark mode)
+html[data-theme='dark-synth'] [data-app-layout],
+html[data-theme='dark-synth'] [data-app-main] {
+  background: transparent !important;
 }
 
 // Dialog overrides for dark-synth
