@@ -1,0 +1,14 @@
+---
+description: After completing tasks, always commit and push unless the user says otherwise
+alwaysApply: true
+---
+
+# Commit and push after tasks
+
+When you finish a task that changes files in this project:
+
+1. Stage the relevant changed files (do not add untracked files unless the user asked for them).
+2. Commit with a clear, concise message describing what was done.
+3. Push to the current branch (e.g. `origin/main`).
+
+Do **not** commit and push if the user explicitly asks you not to (e.g. "don't push yet", "just commit locally", "wait to push").
