@@ -150,6 +150,50 @@ export const CTA_BAND = {
   buttonHref: '/products',
 };
 
+/** Products page intro and additional products/pricing (from brochure). */
+export const PRODUCTS_PAGE = {
+  intro:
+    'Our peptide lineup follows the same categories and descriptions as our brochure. Each product includes clear protocol information. Contact us for pricing and availability.',
+  /** From brochure p.11 – Additional Products and Pricing. */
+  additionalHeading: 'Additional products and pricing',
+  additionalIntro: 'Glow packages, equipment, and supplies. Call for pricing where noted.',
+  items: [
+    {
+      name: 'Glow',
+      description: 'BPC-157, TB-500, and GHK-Cu.',
+    },
+    {
+      name: 'Glow Plus',
+      description: 'BPC-157, TB-500, GHK-Cu, and Glutathione.',
+    },
+    {
+      name: 'Glow Plus Skinny',
+      description: 'BPC-157, TB-500, GHK-Cu, Glutathione, and Tirzepatide.',
+    },
+    {
+      name: 'The Total Glow Package',
+      description: 'BPC-157, TB-500, GHK-Cu, Glutathione, Tirzepatide, and Sermorelin.',
+    },
+    {
+      name: 'Grounding Blanket',
+      description: 'Call for pricing; varies for commercial vs. personal use.',
+    },
+    {
+      name: 'Frequency Machine',
+      description: 'Call for pricing; varies for commercial vs. personal use.',
+    },
+    {
+      name: 'Syringes',
+      description: 'One 100-count box; $36 US Dollars.',
+    },
+    {
+      name: 'Ice Packs & Shipping Envelopes',
+      description: 'Can be purchased online at Uline.com.',
+    },
+  ],
+  pricingNote: 'Contact us for pricing and availability on individual peptides and packages.',
+};
+
 export const ABOUT_INTRO = {
   headline: 'About Peptides With Indra',
   lead: 'We started Peptides With Indra to make professional peptides easier to get and understand—for everyday use, recovery, and when you need injury-specific support.',

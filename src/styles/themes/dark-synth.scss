@@ -111,9 +111,9 @@ html[data-theme='dark-synth'] body {
   color: #dbd4fa;
 }
 
-// Mobile: many browsers don't support background-attachment: fixed (e.g. iOS Safari),
-// which breaks or disables parallax. Use scroll so the background still displays correctly.
-@media (max-width: 768px) {
+// Mobile & tablet: many browsers don't support background-attachment: fixed (e.g. iOS Safari, many Android),
+// which breaks or hides the background. Use scroll so the background displays correctly.
+@media (max-width: 1024px) {
   html[data-theme='dark-synth'] body {
     background-attachment: scroll !important;
   }

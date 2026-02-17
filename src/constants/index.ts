@@ -19,6 +19,7 @@ export {
   FAQ_PREVIEW_ITEMS,
   FAQ_ITEMS,
   CTA_BAND,
+  PRODUCTS_PAGE,
   ABOUT_INTRO,
   CONTACT_COPY,
 } from './content';

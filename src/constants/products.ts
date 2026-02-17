@@ -22,7 +22,7 @@ export const PRODUCTS: Product[] = [
     name: 'Sermorelin',
     category: 'Anti-Aging / Hormone & Cellular Regeneration',
     shortDescription:
-      'Stimulates the pituitary to produce HGH naturally; supports lean muscle, bone density, and metabolic health.',
+      'Stimulates the pituitary to produce HGH naturally, supporting lean muscle, bone density, and metabolic health.',
     longDescription:
       'Stimulates the pituitary to produce HGH naturally, supporting lean muscle, bone density, cardiovascular function, and metabolic health. Helps counteract age-related HGH decline; benefits include faster recovery, immune support, and overall vitality. Wellness benefits: youthful skin, increased energy, improved mood, better sleep, restored vibrancy.',
     specChips: ['Anti-Aging', 'Recovery', 'Hormone'],

@@ -1,17 +1,21 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
+import { Card } from 'primereact/card';
+import { Button } from 'primereact/button';
 import { AppLayout, ProductCard } from '@/components';
 import {
   PRODUCTS,
   PRODUCT_CATEGORIES,
   getProductsByCategory,
   SITE_TITLE,
+  PRODUCTS_PAGE,
 } from '@/constants';
 import type { ProductCardItem } from '@/types';
 import styles from './products.module.scss';
 
 export const metadata: Metadata = {
   title: 'Products',
-  description: `Browse ${SITE_TITLE} peptide products by category—anti-aging, skin & beauty, weight loss, recovery, and more. Clear info and protocols.`,
+  description: `Browse ${SITE_TITLE} peptide products by category—anti-aging, skin & beauty, weight loss, recovery, and more. Clear info and protocols. Contact for pricing.`,
 };
 
 function toCardItem(p: (typeof PRODUCTS)[0]): ProductCardItem {
@@ -30,11 +34,7 @@ export default function ProductsPage() {
     <AppLayout>
       <div className={styles.wrapper}>
         <h1 className={styles.title}>Products</h1>
-        <p className={styles.intro}>
-          Our peptide lineup is chosen for quality and transparency. Each
-          product comes with clear information so you know what you&apos;re
-          getting. Grouped by category from our brochure.
-        </p>
+        <p className={styles.intro}>{PRODUCTS_PAGE.intro}</p>
         {PRODUCT_CATEGORIES.map((category) => {
           const items = getProductsByCategory(category);
           if (items.length === 0) return null;
@@ -68,6 +68,28 @@ export default function ProductsPage() {
             </section>
           );
         })}
+
+        <section className={styles.additionalSection} aria-labelledby="additional-products">
+          <h2 id="additional-products" className={styles.categoryTitle}>
+            {PRODUCTS_PAGE.additionalHeading}
+          </h2>
+          <p className={styles.additionalIntro}>
+            {PRODUCTS_PAGE.additionalIntro}
+          </p>
+          <ul className={styles.additionalList}>
+            {PRODUCTS_PAGE.items.map((item) => (
+              <li key={item.name}>
+                <strong>{item.name}:</strong> {item.description}
+              </li>
+            ))}
+          </ul>
+          <p className={styles.pricingNote}>
+            {PRODUCTS_PAGE.pricingNote}
+          </p>
+          <Link href="/contact">
+            <Button label="Contact us for pricing" className="p-button-outlined" />
+          </Link>
+        </section>
       </div>
     </AppLayout>
   );

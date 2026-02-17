@@ -52,6 +52,9 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
                 <ProductTag key={chip} label={chip} />
               ))}
             </div>
+            <p className={styles.pricingCta}>
+              Contact us for pricing and availability.
+            </p>
             <Link href="/contact">
               <Button label="Inquire or order" className="p-button-lg" />
             </Link>
