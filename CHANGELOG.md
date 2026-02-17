@@ -10,6 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - **Branding**: Site name updated from “Peptides With Indra” to “Goddess Wellness” (per client; matches brochure). `SITE_TITLE`, hero headline, About headline/lead, metadata, and README updated. Tagline and product copy unchanged.
 - **Brochure-as-company**: Site framed as the company that produced the brochure. Hero: "The company behind the brochure." About: Goddess Wellness is the company behind the product brochure; this site brings the brochure catalog online. Products intro: catalog matches our product brochure. Brochure label "Download our brochure"; About card copy "Our product brochure is the full catalog."
+- **Metadata**: Default meta description now includes brand name: "Goddess Wellness: professional peptides, your way. ..." for SEO and link previews. All page metadata already used SITE_TITLE/SITE_DESCRIPTION so titles and descriptions show Goddess Wellness.
 
 ### Added
 

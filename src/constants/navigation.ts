@@ -28,4 +28,4 @@ export const SITE_URL =
     : 'https://peptideswithindra.com';
 
 export const SITE_DESCRIPTION =
-  'Professional peptides, your way. Clear information and easy access for everyday use, recovery, and injury-specific support.';
+  'Goddess Wellness: professional peptides, your way. Clear information and easy access for everyday use, recovery, and injury-specific support.';
