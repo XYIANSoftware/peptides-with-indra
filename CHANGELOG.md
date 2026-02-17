@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Changed
+
+- **Branding**: Site name updated from “Peptides With Indra” to “Goddess Wellness” (per client; matches brochure). `SITE_TITLE`, hero headline, About headline/lead, metadata, and README updated. Tagline and product copy unchanged.
+- **Brochure-as-company**: Site framed as the company that produced the brochure. Hero: "The company behind the brochure." About: Goddess Wellness is the company behind the product brochure; this site brings the brochure catalog online. Products intro: catalog matches our product brochure. Brochure label "Download our brochure"; About card copy "Our product brochure is the full catalog."
+
 ### Added
 
 - **Product spec tag dialogs**: Tags (Recovery, Research-backed, 5 mg, Mobility, Longevity, Cellular, 10 mg) are clickable with subtle hover and active styles; click/tap opens a dialog with short, factual copy. Same look as before so they don’t scream “clickable.”

@@ -49,7 +49,7 @@ export const metadata: Metadata = {
         url: '/main-app-twitter-og-meta-image-icon.png',
         width: 1536,
         height: 1024,
-        alt: `${SITE_TITLE} – Professional peptides, your way`,
+        alt: `${SITE_TITLE} – Quality peptides, clear information`,
       },
     ],
   },

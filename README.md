@@ -1,6 +1,6 @@
-# Peptides With Indra
+# Goddess Wellness (peptides-with-indra)
 
-Marketing and product site for Peptides With Indra: science-backed peptides with clear information and a focus on quality and transparency.
+Marketing and product site for Goddess Wellness: science-backed peptides with clear information and a focus on quality and transparency. (Repo name remains peptides-with-indra.)
 
 ## Tech stack
 

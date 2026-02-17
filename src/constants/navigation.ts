@@ -15,11 +15,11 @@ export const LEGAL_LINKS = [
 export const CTA_LABEL = 'Shop Products';
 export const CTA_HREF = '/products';
 
-/** Client brochure PDF in public/ — link for download. */
+/** Our product brochure PDF in public/ — link for download. */
 export const BROCHURE_PDF_PATH = '/GoddessWellnessF.pdf';
-export const BROCHURE_LABEL = 'Download brochure';
+export const BROCHURE_LABEL = 'Download our brochure';
 
-export const SITE_TITLE = 'Peptides With Indra';
+export const SITE_TITLE = 'Goddess Wellness';
 
 /** Used for metadataBase, openGraph.url, canonical; set NEXT_PUBLIC_SITE_URL in production. */
 export const SITE_URL =

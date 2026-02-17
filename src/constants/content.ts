@@ -1,9 +1,9 @@
 // Placeholder content — tone: confident, clear, human, trustworthy.
 
 export const HERO = {
-  headline: 'Peptides With Indra',
+  headline: 'Goddess Wellness',
   valueStatement:
-    'Clear information and easy access—for everyday use, recovery, and injury-specific support. Professional peptides, your way.',
+    'The company behind the brochure. Clear information and easy access—for everyday use, recovery, and injury-specific support. Professional peptides, your way.',
   ctaPrimary: 'Shop Products',
   ctaSecondary: 'Learn More',
 };
@@ -150,10 +150,10 @@ export const CTA_BAND = {
   buttonHref: '/products',
 };
 
-/** Products page intro and additional products/pricing (from brochure). */
+/** Products page intro and additional products/pricing (from our brochure). */
 export const PRODUCTS_PAGE = {
   intro:
-    'Our peptide lineup follows the same categories and descriptions as our brochure. Each product includes clear protocol information. Contact us for pricing and availability.',
+    'This catalog matches our product brochure—same categories and descriptions. Each product includes clear protocol information. Contact us for pricing and availability.',
   /** From brochure p.11 – Additional Products and Pricing. */
   additionalHeading: 'Additional products and pricing',
   additionalIntro: 'Glow packages, equipment, and supplies. Call for pricing where noted.',
@@ -195,10 +195,10 @@ export const PRODUCTS_PAGE = {
 };
 
 export const ABOUT_INTRO = {
-  headline: 'About Peptides With Indra',
-  lead: 'We started Peptides With Indra to make professional peptides easier to get and understand—for everyday use, recovery, and when you need injury-specific support.',
+  headline: 'About Goddess Wellness',
+  lead: 'Goddess Wellness is the company behind the product brochure. We offer professional peptides and wellness products with clear information and easy access—for everyday use, recovery, and injury-specific support.',
   paragraphs: [
-    'Our mission is simple: give you easy access to quality peptides and clear, honest information. You deserve to know what you’re taking, why it might help, and what the research says—in plain language.',
+    'This site brings our brochure catalog online so you can browse products, read protocols, and get in touch. Our mission is simple: give you easy access to quality peptides and clear, honest information. You deserve to know what you’re taking, why it might help, and what the research says—in plain language.',
     'Our products are brought to you through ProAthlete.US. Most injectable products are made locally in a compounding lab owned and operated by doctors based in Orange County, CA, and are held to high quality standards. We’re not here to sell you a miracle—we’re here to offer well-researched options, transparent information, and a team that answers your questions.',
     'Whether you’re new to peptides or you’ve been using them for a while, we want to be a resource you can trust. Thank you for being here.',
   ],
