@@ -32,6 +32,13 @@ a {
   text-decoration: none;
 }
 
+/* ADA: visible focus for keyboard users. Use :focus-visible so mouse users don't get a ring on click. */
+a:focus-visible,
+button:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
 // Layout / container helpers (vars only) – generous padding for professional, un-cramped feel
 .app-container {
   width: 100%;

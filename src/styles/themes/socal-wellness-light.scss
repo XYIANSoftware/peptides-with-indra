@@ -29,7 +29,8 @@ html[data-theme='socal-wellness-light'],
   --button-primary-background-hover: #5d9485 !important;
   --button-primary-text: #ffffff !important;
   --maskbg: rgba(248, 247, 244, 0.85) !important;
-  --focus-ring: 0 0 0 0.2rem rgba(107, 163, 146, 0.35) !important;
+  /* Focus ring: 2px solid for WCAG 2.2 contrast (3:1). Darker green on light bg. */
+  --focus-ring: 0 0 0 2px #4a7568 !important;
   --highlight-bg: rgba(126, 184, 168, 0.12) !important;
   --highlight-text-color: #2d2d2d !important;
   --color-danger: #c45c6a !important;

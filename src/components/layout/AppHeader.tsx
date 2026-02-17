@@ -105,6 +105,7 @@ export function AppHeader() {
                   setTheme(t.id);
                   closeMobileMenu();
                 }}
+                aria-label={`Switch to ${t.label}`}
                 aria-pressed={theme === t.id}
               >
                 {t.label}

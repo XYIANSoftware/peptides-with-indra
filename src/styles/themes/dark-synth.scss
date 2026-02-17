@@ -28,7 +28,8 @@ html[data-theme='dark-synth'],
   --button-primary-background-hover: #3dd9d2 !important;
   --button-primary-text: #07071b !important;
   --maskbg: rgba(7, 0, 27, 0.75) !important;
-  --focus-ring: 0 0 0 0.2rem rgba(36, 205, 197, 0.35) !important;
+  /* Focus ring: 2px solid for WCAG 2.2 contrast (3:1). Teal on dark bg. */
+  --focus-ring: 0 0 0 2px #24cdc5 !important;
   --highlight-bg: rgba(36, 205, 197, 0.15) !important;
   --highlight-text-color: #dbd4fa !important;
   --color-danger: #f472b6 !important;
