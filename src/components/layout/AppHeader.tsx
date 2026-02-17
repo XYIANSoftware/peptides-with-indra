@@ -4,6 +4,7 @@ import { useCallback, useState } from 'react';
 import Link from 'next/link';
 import { Button } from 'primereact/button';
 import { Sidebar } from 'primereact/sidebar';
+import { BrochureDownloadButton } from '@/components/ui';
 import { useTheme } from '@/providers';
 import { THEMES } from '@/constants';
 import { NAV_LINKS, CTA_LABEL, CTA_HREF, SITE_TITLE } from '@/constants';
@@ -55,9 +56,12 @@ export function AppHeader() {
                 </button>
               ))}
             </div>
-            <Link href={CTA_HREF} className={styles.ctaDesktop}>
-              <Button label={CTA_LABEL} />
-            </Link>
+            <div className={styles.ctaDesktop}>
+              <BrochureDownloadButton className={styles.brochureDesktop} />
+              <Link href={CTA_HREF}>
+                <Button label={CTA_LABEL} />
+              </Link>
+            </div>
             <Button
               icon="pi pi-bars"
               rounded
@@ -108,9 +112,12 @@ export function AppHeader() {
             ))}
           </div>
         </div>
-        <Link href={CTA_HREF} onClick={closeMobileMenu} className={styles.ctaMobile}>
-          <Button label={CTA_LABEL} className="w-full" />
-        </Link>
+        <div className={styles.ctaMobile}>
+          <BrochureDownloadButton className="w-full" />
+          <Link href={CTA_HREF} onClick={closeMobileMenu}>
+            <Button label={CTA_LABEL} className="w-full" />
+          </Link>
+        </div>
       </Sidebar>
     </>
   );

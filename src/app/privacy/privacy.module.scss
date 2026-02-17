@@ -7,16 +7,27 @@
   font-size: 1.75rem;
   font-weight: 600;
   color: var(--text-color);
-  margin: 0 0 1rem;
+  margin: 0 0 0.5rem;
   transition: color 0.2s ease;
 }
 
-.lead {
-  font-size: 1.125rem;
-  line-height: 1.6;
-  color: var(--text-color);
+.updated {
+  font-size: 0.875rem;
+  color: var(--text-color-secondary);
   margin: 0 0 1.5rem;
   transition: color 0.2s ease;
+}
+
+.heading {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin: 1.5rem 0 0.5rem;
+  transition: color 0.2s ease;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
 }
 
 .para {
@@ -29,16 +40,4 @@
   &:last-child {
     margin-bottom: 0;
   }
-}
-
-.brochureCard {
-  margin-top: 2.5rem;
-}
-
-.brochureText {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: var(--text-color-secondary);
-  margin: 0 0 1rem;
-  transition: color 0.2s ease;
 }

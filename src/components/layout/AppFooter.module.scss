@@ -51,10 +51,25 @@
   margin: 0;
 }
 
+.footerRight {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+
+  @media (min-width: 640px) {
+    align-items: flex-end;
+  }
+}
+
 .links {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem 1.5rem;
+}
+
+.brochureBtn {
+  flex-shrink: 0;
 }
 
 .link {
@@ -70,10 +85,31 @@
 
 .bottom {
   padding-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.25rem;
 }
 
 .copyright {
   font-size: 0.8125rem;
   color: var(--text-color-secondary);
   margin: 0;
+}
+
+.legalLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
+
+.legalLink {
+  font-size: 0.8125rem;
+  color: var(--text-color-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: var(--text-color);
+  }
 }

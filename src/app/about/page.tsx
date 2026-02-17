@@ -1,6 +1,14 @@
+import type { Metadata } from 'next';
+import { Card } from 'primereact/card';
 import { AppLayout } from '@/components';
-import { ABOUT_INTRO } from '@/constants';
+import { BrochureDownloadButton } from '@/components/ui';
+import { ABOUT_INTRO, SITE_DESCRIPTION } from '@/constants';
 import styles from './about.module.scss';
+
+export const metadata: Metadata = {
+  title: 'About',
+  description: `About Peptides With Indra. ${SITE_DESCRIPTION}`,
+};
 
 export default function AboutPage() {
   return (
@@ -13,6 +21,13 @@ export default function AboutPage() {
             {para}
           </p>
         ))}
+        <Card className={styles.brochureCard}>
+          <p className={styles.brochureText}>
+            Download our full product brochure for detailed information on our
+            peptides, protocols, and wellness offerings.
+          </p>
+          <BrochureDownloadButton outlined={false} />
+        </Card>
       </article>
     </AppLayout>
   );

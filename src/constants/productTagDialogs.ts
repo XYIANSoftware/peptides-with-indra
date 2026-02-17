@@ -55,6 +55,34 @@ export const TAG_DIALOG_LIST: TagDialogInfo[] = [
     dialogDescription:
       'Peptides are often sold in set amounts (e.g. 5 mg, 10 mg) per vial. The size reflects the amount of peptide per container and can affect how many doses you get and how you dose. Larger sizes (e.g. 10 mg) may be used for longer or higher-dose protocols. Always follow label and professional guidance.',
   },
+  {
+    id: 'anti-aging',
+    label: 'Anti-Aging',
+    dialogTitle: 'Anti-Aging',
+    dialogDescription:
+      'Peptides in this category are studied for their potential to support healthy aging at the cellular and hormonal level—including HGH support, NAD+ pathways, and cellular repair. They may help with energy, skin quality, recovery, and vitality. Use only as directed and in consultation with a qualified professional.',
+  },
+  {
+    id: 'hormone',
+    label: 'Hormone',
+    dialogTitle: 'Hormone support',
+    dialogDescription:
+      'Some peptides support natural hormone production or balance (e.g. growth hormone–releasing peptides, testosterone support). These are for use under medical or professional supervision. Always work with a qualified provider for hormone-related protocols.',
+  },
+  {
+    id: 'skin-beauty',
+    label: 'Skin & Beauty',
+    dialogTitle: 'Skin & Beauty',
+    dialogDescription:
+      'Peptides in this category are used to support skin structure, collagen, healing, and radiance—from copper peptides and BPC-157 to glutathione and more. They target cellular repair and antioxidant support. For educational use; consult a skincare or healthcare professional.',
+  },
+  {
+    id: 'weight-loss',
+    label: 'Weight Loss',
+    dialogTitle: 'Weight Loss',
+    dialogDescription:
+      'Certain peptides have been studied for their role in satiety, metabolism, and weight management. They are used under professional guidance as part of a broader protocol. Results vary; always follow your provider’s recommendations and use only as directed.',
+  },
 ];
 
 const TAG_DIALOG_BY_LABEL = new Map<string, TagDialogInfo>(

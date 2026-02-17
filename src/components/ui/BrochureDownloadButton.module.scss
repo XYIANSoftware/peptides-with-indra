@@ -1,0 +1,44 @@
+// Match PrimeReact button look so the brochure link fits the UI
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  padding: var(--button-padding-y, 0.625rem) var(--button-padding-x, 1.25rem);
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  text-decoration: none;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.95;
+  }
+}
+
+.outlined {
+  background: transparent;
+  color: var(--text-color);
+  border: 1px solid var(--surface-border);
+
+  &:hover {
+    background: var(--surface-hover);
+    border-color: var(--surface-border);
+  }
+}
+
+.filled {
+  background: var(--primary-color);
+  color: var(--primary-color-text);
+  border: 1px solid var(--primary-color);
+
+  &:hover {
+    filter: brightness(1.05);
+  }
+}

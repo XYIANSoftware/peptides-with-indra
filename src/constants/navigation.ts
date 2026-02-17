@@ -6,8 +6,18 @@ export const NAV_LINKS = [
   { href: '/contact', label: 'Contact' },
 ] as const;
 
+/** Footer legal links (Terms, Privacy). */
+export const LEGAL_LINKS = [
+  { href: '/terms', label: 'Terms of use' },
+  { href: '/privacy', label: 'Privacy policy' },
+] as const;
+
 export const CTA_LABEL = 'Shop Products';
 export const CTA_HREF = '/products';
+
+/** Client brochure PDF in public/ — link for download. */
+export const BROCHURE_PDF_PATH = '/GoddessWellnessF.pdf';
+export const BROCHURE_LABEL = 'Download brochure';
 
 export const SITE_TITLE = 'Peptides With Indra';
 

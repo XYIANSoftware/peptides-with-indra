@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Button } from 'primereact/button';
+import { BrochureDownloadButton } from '@/components/ui';
 import { HERO } from '@/constants';
 import styles from './HomeSections.module.scss';
 
@@ -18,6 +19,7 @@ export function HomeHeroSection() {
           <Link href="/about">
             <Button label={HERO.ctaSecondary} outlined className="p-button-lg" />
           </Link>
+          <BrochureDownloadButton className={styles.heroBrochureBtn} />
         </div>
       </div>
     </section>

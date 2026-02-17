@@ -35,23 +35,23 @@ export const FEATURED_PRODUCTS_PREVIEW = [
   {
     id: 'bpc-157',
     name: 'BPC-157',
-    shortDescription: 'Support for recovery and tissue repair.',
-    specChips: ['Recovery', 'Research-backed'],
+    shortDescription: 'Tissue healing, inflammation reduction, and accelerated regeneration.',
+    specChips: ['Recovery', 'Research-backed', 'Skin & Beauty'],
     href: '/products/bpc-157',
   },
   {
     id: 'tb-500',
     name: 'TB-500',
-    shortDescription: 'Peptide fragment to support mobility and healing.',
-    specChips: ['Mobility', 'Recovery'],
+    shortDescription: 'Supports tissue repair, cell migration, and angiogenesis.',
+    specChips: ['Recovery', 'Mobility', 'Skin & Beauty'],
     href: '/products/tb-500',
   },
   {
-    id: 'epithalon',
-    name: 'Epithalon',
-    shortDescription: 'Short peptide studied for cellular health and longevity.',
-    specChips: ['Longevity', 'Cellular'],
-    href: '/products/epithalon',
+    id: 'sermorelin',
+    name: 'Sermorelin',
+    shortDescription: 'Stimulates natural HGH; supports lean muscle, bone density, and vitality.',
+    specChips: ['Anti-Aging', 'Recovery', 'Hormone'],
+    href: '/products/sermorelin',
   },
 ];
 
@@ -93,7 +93,8 @@ export const FAQ_PREVIEW_ITEMS = [
   {
     id: 'how-choose-product',
     question: 'How do I choose a product?',
-    answer: 'Start with your goals—recovery, mobility, general wellness—and read our product pages. We list what each peptide is for and how it’s used.',
+    answer:
+      'Start with your goals—recovery, anti-aging, skin & beauty, weight loss, or mobility—and browse our products by category. Each product page has details, protocol (dosage, administration), and specs. We list what each peptide is for and how it’s used.',
   },
   {
     id: 'shipping-discreet',
@@ -104,6 +105,24 @@ export const FAQ_PREVIEW_ITEMS = [
     id: 'contact-questions',
     question: 'Can I contact you with questions?',
     answer: 'Absolutely. Use our Contact page or email. We respond to every message.',
+  },
+  {
+    id: 'injection-recommendations',
+    question: 'How should I administer injectable products?',
+    answer:
+      'Unless specified as intramuscular, injectables are typically recommended in the abdominal area, about 3 inches away from the belly button. Rotate injection sites. You can always add product, but you can’t take it out—so start slowly. Never give another person an injection unless you are a licensed medical professional. There are many YouTube videos on injection areas and technique if this is new to you.',
+  },
+  {
+    id: 'storage-keep-cold',
+    question: 'Do products need to be kept cold?',
+    answer:
+      'Yes. Injectable and many peptide products must be kept refrigerated before and after reconstitution. Follow the product label for storage and use-by guidance. When your order arrives, refrigerate promptly if required.',
+  },
+  {
+    id: 'where-products-made',
+    question: 'Where are your products made?',
+    answer:
+      'Our products are brought to you through ProAthlete.US. Most injectable products are made locally in a compounding lab owned and operated by doctors based in Orange County, CA, and are held to high quality standards. Many products are higher in volume than typically found on the market to provide the best value.',
   },
 ];
 
@@ -136,7 +155,7 @@ export const ABOUT_INTRO = {
   lead: 'We started Peptides With Indra to make professional peptides easier to get and understand—for everyday use, recovery, and when you need injury-specific support.',
   paragraphs: [
     'Our mission is simple: give you easy access to quality peptides and clear, honest information. You deserve to know what you’re taking, why it might help, and what the research says—in plain language.',
-    'We’re not here to sell you a miracle. We’re here to offer well-researched options, transparent information, and a team that answers your questions.',
+    'Our products are brought to you through ProAthlete.US. Most injectable products are made locally in a compounding lab owned and operated by doctors based in Orange County, CA, and are held to high quality standards. We’re not here to sell you a miracle—we’re here to offer well-researched options, transparent information, and a team that answers your questions.',
     'Whether you’re new to peptides or you’ve been using them for a while, we want to be a resource you can trust. Thank you for being here.',
   ],
 };

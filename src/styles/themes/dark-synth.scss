@@ -111,6 +111,14 @@ html[data-theme='dark-synth'] body {
   color: #dbd4fa;
 }
 
+// Mobile: many browsers don't support background-attachment: fixed (e.g. iOS Safari),
+// which breaks or disables parallax. Use scroll so the background still displays correctly.
+@media (max-width: 768px) {
+  html[data-theme='dark-synth'] body {
+    background-attachment: scroll !important;
+  }
+}
+
 // Ensure layout wrappers don't cover the body background (dark mode)
 html[data-theme='dark-synth'] [data-app-layout],
 html[data-theme='dark-synth'] [data-app-main] {
@@ -159,4 +167,38 @@ html[data-theme='dark-synth'] .p-dialog .p-dialog-header-icon:hover,
 [data-theme='dark-synth'] .p-dialog .p-dialog-header-icon:hover {
   background: var(--surface-hover);
   color: var(--header-fg);
+}
+
+// TabView: dark tab bar and headers (override Prime base theme)
+html[data-theme='dark-synth'] .p-tabview .p-tabview-nav,
+[data-theme='dark-synth'] .p-tabview .p-tabview-nav {
+  background: var(--surface-ground) !important;
+  border-color: var(--surface-border) !important;
+}
+
+html[data-theme='dark-synth'] .p-tabview .p-tabview-nav .p-tabview-header-link,
+[data-theme='dark-synth'] .p-tabview .p-tabview-nav .p-tabview-header-link {
+  color: var(--text-color) !important;
+  background: transparent !important;
+  border-color: var(--surface-border) !important;
+}
+
+html[data-theme='dark-synth'] .p-tabview .p-tabview-nav .p-tabview-header-link:hover,
+[data-theme='dark-synth'] .p-tabview .p-tabview-nav .p-tabview-header-link:hover {
+  background: var(--surface-hover) !important;
+  color: var(--text-color) !important;
+}
+
+html[data-theme='dark-synth'] .p-tabview .p-tabview-nav .p-tabview-header.p-highlight .p-tabview-header-link,
+[data-theme='dark-synth'] .p-tabview .p-tabview-nav .p-tabview-header.p-highlight .p-tabview-header-link {
+  background: var(--surface-card) !important;
+  color: var(--primary-color) !important;
+  border-color: var(--surface-border) !important;
+}
+
+html[data-theme='dark-synth'] .p-tabview .p-tabview-panels,
+[data-theme='dark-synth'] .p-tabview .p-tabview-panels {
+  background: var(--surface-card) !important;
+  border-color: var(--surface-border) !important;
+  color: var(--text-color) !important;
 }

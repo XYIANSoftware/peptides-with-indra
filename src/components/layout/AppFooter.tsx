@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { NAV_LINKS, SITE_TITLE } from '@/constants';
+import { BrochureDownloadButton } from '@/components/ui';
+import { LEGAL_LINKS, NAV_LINKS, SITE_TITLE } from '@/constants';
 import styles from './AppFooter.module.scss';
 
 const CURRENT_YEAR = new Date().getFullYear();
@@ -17,18 +18,28 @@ export function AppFooter() {
               Quality peptides, clear information, and a commitment to what actually works.
             </p>
           </div>
-          <nav className={styles.links} aria-label="Footer navigation">
-            {NAV_LINKS.map(({ href, label }) => (
-              <Link key={href} href={href} className={styles.link}>
-                {label}
-              </Link>
-            ))}
-          </nav>
+          <div className={styles.footerRight}>
+            <nav className={styles.links} aria-label="Footer navigation">
+              {NAV_LINKS.map(({ href, label }) => (
+                <Link key={href} href={href} className={styles.link}>
+                  {label}
+                </Link>
+              ))}
+            </nav>
+            <BrochureDownloadButton className={styles.brochureBtn} />
+          </div>
         </div>
         <div className={styles.bottom}>
           <p className={styles.copyright}>
             © {CURRENT_YEAR} {SITE_TITLE}. All rights reserved.
           </p>
+          <nav className={styles.legalLinks} aria-label="Legal">
+            {LEGAL_LINKS.map(({ href, label }) => (
+              <Link key={href} href={href} className={styles.legalLink}>
+                {label}
+              </Link>
+            ))}
+          </nav>
         </div>
       </div>
     </footer>
