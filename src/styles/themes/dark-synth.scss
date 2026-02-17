@@ -111,14 +111,6 @@ html[data-theme='dark-synth'] body {
   color: #dbd4fa;
 }
 
-// Mobile & tablet: many browsers don't support background-attachment: fixed (e.g. iOS Safari, many Android),
-// which breaks or hides the background. Use scroll so the background displays correctly.
-@media (max-width: 1024px) {
-  html[data-theme='dark-synth'] body {
-    background-attachment: scroll !important;
-  }
-}
-
 // Ensure layout wrappers don't cover the body background (dark mode)
 html[data-theme='dark-synth'] [data-app-layout],
 html[data-theme='dark-synth'] [data-app-main] {

@@ -116,14 +116,6 @@ html[data-theme='socal-wellness-light'] body {
   color: #2d2d2d;
 }
 
-// Mobile & tablet: many browsers don't support background-attachment: fixed (e.g. iOS Safari, many Android),
-// which breaks or hides the background. Use scroll so the background displays correctly.
-@media (max-width: 1024px) {
-  html[data-theme='socal-wellness-light'] body {
-    background-attachment: scroll !important;
-  }
-}
-
 // Ensure layout wrappers don't cover the body background (light mode only)
 html[data-theme='socal-wellness-light'] [data-app-layout],
 html[data-theme='socal-wellness-light'] [data-app-main] {
